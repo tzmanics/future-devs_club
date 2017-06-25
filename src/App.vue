@@ -1,22 +1,21 @@
 <template>
   <div id="app">
     <header>
-      <span>Vue.js PWA</span>
+      <img src="./assets/fdc-logo_01.png" alt="Future Devs Club logo" id="header-logo">
     </header>
     <main>
-      <img src="./assets/logo.png" alt="Vue.js PWA">
-      <hello></hello>
+      <intro></intro>
     </main>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+import Intro from './components/Intro'
 
 export default {
   name: 'app',
   components: {
-    Hello
+    Intro
   }
 }
 </script>
@@ -27,33 +26,29 @@ body {
 }
 
 #app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
 }
 
 main {
+  width: 80%;
+  margin: 10px auto;
+  padding: 5px;
+  border: solid 3px yellow;
   text-align: center;
-  margin-top: 40px;
 }
 
 header {
   margin: 0;
-  height: 56px;
-  padding: 0 16px 0 24px;
-  background-color: #4fc08d;
-  color: #ffffff;
+  height: 50px;
+  padding: 9px 0 0 5px;
+  background-color: aqua;
 }
 
-header span {
-  display: block;
-  position: relative;
-  font-size: 20px;
-  line-height: 1;
-  letter-spacing: .02em;
-  font-weight: 400;
-  box-sizing: border-box;
-  padding-top: 16px;
+#header-logo {
+  width: 40px;
+  float: left;
 }
+
 </style>
